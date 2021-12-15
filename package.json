@@ -1,0 +1,12 @@
+{
+  "name": "regex-library",
+  "version": "1.1.0",
+  "description": "存放正则的仓库",
+  "author": "havebear",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
