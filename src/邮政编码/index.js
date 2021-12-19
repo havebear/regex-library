@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2021-12-19 21:27:30
  * @LastEditors: BGG
- * @LastEditTime: 2021-12-19 22:08:13
+ * @LastEditTime: 2021-12-19 22:15:50
  * @Description:  邮政编码
  */
 
@@ -19,5 +19,5 @@ const { genGetTargetStrFnByRegex } = require('../utils')
  */
 
 module.exports = {
-  regFn: genGetTargetStrFnByRegex(new RegExp('^[1-9]\d{5}$'))
+  regFn: genGetTargetStrFnByRegex(new RegExp('^[1-9]\\d{5}$'))
 }
