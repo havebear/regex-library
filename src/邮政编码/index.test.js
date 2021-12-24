@@ -8,8 +8,6 @@
 
 const { regFn } = require('./index')
 
-console.log(regFn('482356'))
-
 test('邮政编码', () => {
   expect(regFn('482356')[0]).toBe('482356')
 })
