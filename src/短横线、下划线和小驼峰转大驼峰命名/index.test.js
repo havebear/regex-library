@@ -8,10 +8,10 @@
 
 const { regFn } = require('./index')
 
-test('下划线、中横线和小驼峰转大驼峰', () => {
+test('短横线、下划线和小驼峰转大驼峰命名', () => {
   expect(regFn('a-b-c')).toBe('ABC')
 })
 
-test('下划线、中横线和小驼峰转大驼峰', () => {
+test('短横线、下划线和小驼峰转大驼峰命名', () => {
   expect(regFn('a-b_c')).toBe('ABC')
 })
