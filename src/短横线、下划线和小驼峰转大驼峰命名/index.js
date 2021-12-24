@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2021-12-24 13:22:21
  * @LastEditors: BGG
- * @LastEditTime: 2021-12-24 13:31:13
+ * @LastEditTime: 2021-12-24 14:16:57
  * @Description:  下划线、中横线和小驼峰转大驼峰
  */
 
@@ -30,8 +30,17 @@
 
 const reg = /(^|-|_)(\w)/g
 
+/**
+ * 匹配 字符串开头 或 -字符串开头 或 _字符串开头，然后替代最小组的小写
+ */
+
 const regFn = (text = '') => {
-  return text.replace(reg, (reg, ($, $1, $2) => $2.toUpperCase()))
+  return text.replace(reg, (reg, ($, $1, $2) => {
+    // console.log($)
+    // console.log($1)
+    // console.log($2)
+    return $2.toUpperCase()
+  }))
 }
 
 // console.log(regFn('a-b-c'))

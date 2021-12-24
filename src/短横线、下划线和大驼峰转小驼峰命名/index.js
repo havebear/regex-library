@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2021-12-24 13:41:13
  * @LastEditors: BGG
- * @LastEditTime: 2021-12-24 14:04:32
+ * @LastEditTime: 2021-12-24 14:16:35
  * @Description:  
  */
 
@@ -39,7 +39,7 @@ const regFn = (str = '') => {
   const reg2 = /^(\w)/g
 
   return str
-    .replace(reg, ($, $1, $2) => $2.toUpperCase()) // 先把短横线、下划线后面的第一个字母转为大写
+    .replace(reg, ($, $1, $2) => $2.toUpperCase()) // 先把短横线、下划线后面的第一个字母转为大写，替代_A
     .replace(reg2, ($, $1) => $1.toLowerCase()) // 再把首字母转为小写
 }
 
